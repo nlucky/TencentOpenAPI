@@ -19,15 +19,8 @@ Pod::Spec.new do |s|
   s.version      = "3.3.0"
   s.summary      = "TencentOpenAPI"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  # s.description  = <<-DESC
-  #                  DESC
 
-  s.homepage     = "https://open.qq.com/"
+  s.homepage     = "https://github.com/nlucky"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -118,8 +111,9 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"# => 
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.frameworks          = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
+  s.libraries           = 'iconv', 'sqlite3', 'stdc++', 'z'
+  
   s.ios.vendored_frameworks = 'SDK/TencentOpenAPI.framework'
   s.resource = 'SDK/TencentOpenApi_IOS_Bundle.bundle'
 
